@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65a2db88-9208-4a5f-a6ca-4d04aac89470">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dia" class="java.lang.String"/>
+	<parameter name="mes" class="java.lang.String"/>
+	<parameter name="anio" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="671" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="282" width="131" height="20" uuid="d23c92ce-3f26-450f-b531-67255f9eba3a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. DATOS PERSONALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="302" width="137" height="20" uuid="5f7b39f6-1e2f-45dd-99bd-a4ed39126d7b"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="342" width="137" height="20" uuid="2cd289f2-bf02-4ced-aa93-407b69a4d0d7"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[No. Identificación:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="322" width="137" height="20" uuid="715687c3-b069-4d56-acb3-9f1e3f9369eb"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Tipo de Identificación:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="362" width="137" height="20" uuid="fb34a9ab-b748-4a6b-b684-20b25f571925"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Lugar y Fecha de Nacimiento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="382" width="137" height="20" uuid="b1be3fd4-cf7c-4e52-a8a2-bf83f5deed00"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Edad:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="402" width="137" height="20" uuid="916709ee-e902-40c6-aac2-4838e6874058"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="422" width="137" height="20" uuid="bc80c24f-abb9-41e5-b6d4-8b380a4a476e"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Teléfono fijo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="442" width="137" height="20" uuid="14a5e23a-8a1d-4741-a7f8-78d59b84c9ed"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Teléfono celular:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="462" width="137" height="20" uuid="7c5cd274-19c4-4a37-a294-197fa59c46da"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Cargo al que Aspira: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="482" width="164" height="20" uuid="b4e587da-3e8a-4c4b-87d6-fed1442b1509"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Para la empresa: Teleperformance. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="502" width="137" height="20" uuid="d32de8d7-e3be-47e3-9941-f98a049f7ed8"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Correo Electrónico:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="552" width="131" height="20" uuid="83072004-dc05-422b-944b-2ef3f9da4d75"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. ESTADO DE SALUD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="135" width="131" height="20" uuid="082a2f18-8916-44cd-89df-eda8acc4ddd2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXAMEN DE POLIGRAFO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="160" width="131" height="20" uuid="8818b487-b917-4d83-a43d-03aba7d584cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRE-EMPLEO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="17" width="39" height="20" uuid="72d494d2-af5f-478d-9b26-74b0096b99da"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Bogotá,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="37" width="137" height="20" uuid="64aa42dc-b29f-4841-bfd6-01663d62da9a"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Señores:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="57" width="137" height="20" uuid="f17d3276-8662-42c9-91cf-0856ef4a0e7c"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[TELEPERFORMANCE.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="77" width="137" height="20" uuid="b8225872-9d8b-4d45-91d5-903702cfb0f3"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Ciudad.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="17" width="36" height="20" uuid="59c8a62d-f78d-42f3-bbbe-56f142b7beaa"/>
+				<textFieldExpression><![CDATA[$P{dia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="17" width="50" height="20" uuid="48deed4a-8ed9-4411-9c4d-4d1a0cd024d6"/>
+				<textFieldExpression><![CDATA[$P{mes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="146" y="17" width="100" height="20" uuid="2defe208-c603-40fb-a041-6ec867193915"/>
+				<textFieldExpression><![CDATA[$P{anio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="17" width="100" height="20" uuid="9f1c6262-135d-431a-87ad-a9a846ca60cc"/>
+				<textFieldExpression><![CDATA[$P{dia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="17" width="100" height="20" uuid="4c301543-e07a-4145-9319-573cf7337e09"/>
+				<textFieldExpression><![CDATA[$P{mes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

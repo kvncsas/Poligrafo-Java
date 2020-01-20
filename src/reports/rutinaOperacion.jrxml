@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="495" leftMargin="50" rightMargin="50" topMargin="40" bottomMargin="20" uuid="65a2db88-9208-4a5f-a6ca-4d04aac89470">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1680"/>
+	<parameter name="fecha1" class="java.lang.String"/>
+	<parameter name="p1" class="java.lang.String"/>
+	<parameter name="p2" class="java.lang.String"/>
+	<parameter name="estadosalud" class="java.lang.String"/>
+	<parameter name="informacionfamiliar" class="java.lang.String"/>
+	<parameter name="informacionacademica" class="java.lang.String"/>
+	<parameter name="informacionfinanciera" class="java.lang.String"/>
+	<parameter name="consumojuegos" class="java.lang.String"/>
+	<parameter name="bebidas" class="java.lang.String"/>
+	<parameter name="sustancias" class="java.lang.String"/>
+	<parameter name="antecedentes" class="java.lang.String"/>
+	<parameter name="vinculosbad" class="java.lang.String"/>
+	<parameter name="conducta" class="java.lang.String"/>
+	<parameter name="admisiones" class="java.lang.String"/>
+	<parameter name="instrumento" class="java.lang.String"/>
+	<parameter name="tecnica" class="java.lang.String"/>
+	<parameter name="repasopreg" class="java.lang.String"/>
+	<parameter name="preguntarse" class="java.lang.String"/>
+	<parameter name="conclusion" class="java.lang.String"/>
+	<parameter name="observaciones" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select foto_examen from datos_generales_poli where no_id = 1007363899]]>
+	</queryString>
+	<background>
+		<band height="700">
+			<image>
+				<reportElement x="18" y="99" width="452" height="489" uuid="d77c4c9e-ea61-48df-ad31-3c61b160f6ae"/>
+				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "\\imagen\\confidential.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="148" splitType="Stretch">
+			<staticText>
+				<reportElement x="182" y="99" width="131" height="20" uuid="082a2f18-8916-44cd-89df-eda8acc4ddd2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[EXAMEN DE POLIGRAFO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="119" width="131" height="20" uuid="8818b487-b917-4d83-a43d-03aba7d584cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUTINA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="137" height="20" uuid="b8225872-9d8b-4d45-91d5-903702cfb0f3"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Ciudad.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="137" height="20" uuid="f17d3276-8662-42c9-91cf-0856ef4a0e7c"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[TELEPERFORMANCE.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="137" height="20" uuid="64aa42dc-b29f-4841-bfd6-01663d62da9a"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Señores:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="0" width="252" height="20" uuid="388c450d-9cff-4c21-9af1-6cf596ba776b"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="496" height="53" uuid="847038fb-fb21-4612-b3d3-6bb89529719e"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p1}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="331">
+			<staticText>
+				<reportElement x="182" y="0" width="131" height="20" uuid="d23c92ce-3f26-450f-b531-67255f9eba3a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. DATOS PERSONALES]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="20" width="496" height="293" uuid="620897f1-2969-4907-8ceb-1e2522e36c73"/>
+				<textFieldExpression><![CDATA[$P{p2}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="305" y="20" width="189" height="240" uuid="40faba1b-9ea8-4660-8dc4-79e5cab05b7b"/>
+				<imageExpression><![CDATA[$P{SUBREPORT_DIR2}]]></imageExpression>
+			</image>
+		</band>
+		<band height="67">
+			<staticText>
+				<reportElement x="189" y="0" width="116" height="20" uuid="83072004-dc05-422b-944b-2ef3f9da4d75"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. ESTADO DE SALUD]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="29" uuid="dfbb0662-5fbb-4528-891d-ede2b3bc385f"/>
+				<textFieldExpression><![CDATA[$P{estadosalud}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="73">
+			<staticText>
+				<reportElement x="171" y="0" width="152" height="20" uuid="d26c5fa4-cf38-459b-8d1d-d53bf4b20c8b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. INFORMACIÓN FAMILIAR]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="34" uuid="e2845bd0-e54f-4eff-acaf-7499de7898aa"/>
+				<textFieldExpression><![CDATA[$P{informacionfamiliar}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="82">
+			<staticText>
+				<reportElement x="165" y="0" width="164" height="20" uuid="9a2c1ea8-b77d-4fd3-b64a-4017b10152ff"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. INFORMACIÓN ACADÉMICA]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="40" uuid="f06d8b48-e0fd-462c-b1fa-3845e145c4c4"/>
+				<textFieldExpression><![CDATA[$P{informacionacademica}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="83">
+			<staticText>
+				<reportElement x="165" y="0" width="165" height="20" uuid="69c1fa46-b18e-47a2-a6e6-f4665b27779d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. INFORMACIÓN FINANCIERA]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="45" uuid="5064258b-74d4-49dd-90e4-9c85cab9364e"/>
+				<textFieldExpression><![CDATA[$P{informacionfinanciera}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="90">
+			<staticText>
+				<reportElement x="156" y="0" width="182" height="20" uuid="4efb8c9e-993d-4a3d-b878-66dc7c94c4d9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. CONSUMO DE JUEGOS DE AZAR]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="43" uuid="2fce9db6-32f1-48d4-8d59-ccb29490f263"/>
+				<textFieldExpression><![CDATA[$P{consumojuegos}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="87">
+			<staticText>
+				<reportElement x="137" y="0" width="221" height="20" uuid="eae479ab-4453-4e28-98a4-555294483a0f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7. CONSUMO DE BEBIDAS ALCOHÓLICAS]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="494" height="48" uuid="d79f9c8a-aff7-4154-a204-bbb23abeb913"/>
+				<textFieldExpression><![CDATA[$P{bebidas}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="81">
+			<staticText>
+				<reportElement x="128" y="0" width="239" height="20" uuid="3414afa8-bc4a-498f-9da2-40bcce98b2c1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8. CONSUMO DE SUSTANCIAS PSICOACTIVAS]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="43" uuid="52e954cf-d0a2-4166-b775-28f3ecd140ca"/>
+				<textFieldExpression><![CDATA[$P{sustancias}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="84">
+			<staticText>
+				<reportElement x="121" y="0" width="252" height="20" uuid="26fff37f-1782-4855-82d9-db48575a5a8a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9. ANTECEDENTES Y ANOTACIONES JUDICIALES]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="496" height="43" uuid="2511220c-128e-4f94-8240-4e3333b06097"/>
+				<textFieldExpression><![CDATA[$P{antecedentes}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="77">
+			<staticText>
+				<reportElement x="79" y="0" width="337" height="20" uuid="6c68e8a6-ef4a-4b20-8159-5677d7c7604c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10. VINCULOS CON PERSONAS O GRUPOS AL MARGEN DE LA LEY]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="35" uuid="0b0f84ab-0b0d-4eca-8041-106efd352db0"/>
+				<textFieldExpression><![CDATA[$P{vinculosbad}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="93">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="51" uuid="7906cec1-ae4c-4356-989a-c474feefe13e"/>
+				<textFieldExpression><![CDATA[$P{conducta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="145" y="0" width="205" height="20" uuid="276f2713-edee-46b0-b782-6d2c349688c2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EN CUANTO A LA CONDUCTA LABORAL]]></text>
+			</staticText>
+		</band>
+		<band height="88">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1" y="20" width="494" height="45" uuid="aa92b44a-0e48-4b64-bc85-b0a28b057a96"/>
+				<textFieldExpression><![CDATA[$P{admisiones}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="0" width="94" height="20" uuid="a2cb55a0-505d-4c13-8113-a878bba17377"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[11. ADMISIONES]]></text>
+			</staticText>
+		</band>
+		<band height="89">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="494" height="49" uuid="c72109b8-412c-4c16-a2c4-818c01d4ddb4"/>
+				<textFieldExpression><![CDATA[$P{instrumento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="143" y="0" width="208" height="20" uuid="18be267f-a698-4e63-87c4-f60b2f96602a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXPLICACIÓN DEL INSTRUMENTO]]></text>
+			</staticText>
+		</band>
+		<band height="102">
+			<staticText>
+				<reportElement x="152" y="0" width="190" height="30" uuid="d3b0d3ec-5dfc-42ed-a9a4-7444156ea534"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TECNICA POLIGRAFICA EMPLEADA
+Y DATOS DEL POLIGRAFISTA
+]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="30" width="494" height="52" uuid="0d87b29f-9b51-4f5c-90d8-ea92a949f4d5"/>
+				<textFieldExpression><![CDATA[$P{tecnica}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="86">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="49" uuid="58a99255-e240-4e63-84eb-13905bbfff68"/>
+				<textFieldExpression><![CDATA[$P{repasopreg}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="58" y="0" width="378" height="20" uuid="efa4a0c8-2e69-407f-8b97-4767f57b50f8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPASO DE PREGUNTAS RELEVANTES REALIZADAS EN EL EXAMEN]]></text>
+			</staticText>
+		</band>
+		<band height="85">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="495" height="48" uuid="2cde2a9d-4bfe-4bd5-8d62-32a4fae11919"/>
+				<textFieldExpression><![CDATA[$P{preguntarse}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="81" y="0" width="333" height="20" uuid="2808040a-ee22-4c67-ba6a-01f23f3ef24b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PREGUNTAS RELEVANTES REALIZADAS DURANTE EL EXAMEN]]></text>
+			</staticText>
+		</band>
+		<band height="83">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1" y="20" width="495" height="44" uuid="b76edc35-eb80-4594-b9ac-b58492ebc930"/>
+				<textFieldExpression><![CDATA[$P{conclusion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="152" y="0" width="190" height="20" uuid="6ea8b13d-f7eb-4296-b5c7-85d53c539102"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONCLUSIÓN]]></text>
+			</staticText>
+		</band>
+		<band height="71">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="494" height="32" uuid="79188f08-1084-4197-9fe9-c3d62a93a482"/>
+				<textFieldExpression><![CDATA[$P{observaciones}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="124" y="0" width="246" height="20" uuid="1c129743-df99-4ae6-ba4b-b1511f64f3b6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OBSERVACIONES/ ADMINISIONES POSTEST:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="1" y="24" width="493" height="26" uuid="3c8aaf2d-62a1-4412-8d79-03576c6ff538"/>
+				<textElement>
+					<font size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[La información contenida en este documento, así como los resultados Poligráficos deben mantenerse bajo reserva y absoluta confidencialidad, prevaleciendo los derechos fundamentales de las personas evaluadas. Los resultados obtenidos en éste examen poligráfico no constituyen prueba, ni procedimiento judicial y deben ser utilizados únicamente con el fin de orientar las decisiones de carácter laboral y privado dentro de la empresa. Por lo tanto, las medidas tomadas Teleperformance, en ningún momento comprometen al poligrafista o/a la empresa.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
